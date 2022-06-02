@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.add_edit_task.AddEditTaskFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/edit_text_task_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:paddingHorizontal="10dp"
+            android:hint="Task Name"
+            android:background="@drawable/input_bg"
+            android:inputType="text" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/check_box_important"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:buttonTint="@android:color/holo_red_light"
+            android:text="Important Task" />
+
+        <TextView
+            android:id="@+id/text_view_date_created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Date Created : " />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_save_tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_check_mark"
+        tools:ignore="SpeakableTextPresentCheck" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
